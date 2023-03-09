@@ -3,6 +3,8 @@ package com.bz.hospitalsystem.controller;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import com.bz.hospitalsystem.exceptions.FirstNameNotCorrectException;
+import com.bz.hospitalsystem.exceptions.LastNameNotCorrectException;
 import com.bz.hospitalsystem.exceptions.PatientAlreadyExistException;
 import com.bz.hospitalsystem.exceptions.PatientNotFoundException;
 import com.bz.hospitalsystem.interfaces.IHospital;
@@ -80,6 +82,10 @@ public class HospitalManagement {
 			}catch(PatientAlreadyExistException e) {
 				System.out.println(e);
 			}catch (PatientNotFoundException e) {
+				System.out.println(e);
+			}catch (FirstNameNotCorrectException e) {
+				System.out.println(e);
+			}catch (LastNameNotCorrectException e) {
 				System.out.println(e);
 			}
 		System.out.println(" Press 0: To Re-Visit");

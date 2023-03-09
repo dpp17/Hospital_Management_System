@@ -37,7 +37,6 @@ public class AddPatient {
 			statement.setString(1, pojo.getFirstName());
 			statement.setString(2, pojo.getLastName());
 			statement.setInt(3, pojo.getAge());
-		//	statement.setInt(4, pojo.getPatientId());
 			
 			int confirm = statement.executeUpdate();
 			System.out.println(confirm==1? "Patient Added ":" Error while Adding Patient");
