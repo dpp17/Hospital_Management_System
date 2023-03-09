@@ -1,4 +1,4 @@
-package com.bz.workshopfour.exceptions;
+package com.bz.hospitalsystem.exceptions;
 
 public class PatientAlreadyExistException extends RuntimeException {
 

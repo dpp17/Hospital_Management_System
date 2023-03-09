@@ -1,4 +1,4 @@
-package com.bz.workshopfour.dao;
+package com.bz.hospitalsystem.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.bz.hospitalsystem.connection.ConnectDB;
+import com.bz.hospitalsystem.exceptions.PatientAlreadyExistException;
+import com.bz.hospitalsystem.exceptions.PatientNotFoundException;
 import com.bz.hospitalsystem.model.HospitalPojo;
-import com.bz.workshopfour.exceptions.PatientAlreadyExistException;
-import com.bz.workshopfour.exceptions.PatientNotFoundException;
 
 public class AddPatient {
 	

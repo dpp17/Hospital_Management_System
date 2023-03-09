@@ -3,11 +3,11 @@ package com.bz.hospitalsystem.controller;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import com.bz.hospitalsystem.exceptions.PatientAlreadyExistException;
+import com.bz.hospitalsystem.exceptions.PatientNotFoundException;
 import com.bz.hospitalsystem.interfaces.IHospital;
 import com.bz.hospitalsystem.model.HospitalPojo;
 import com.bz.hospitalsystem.services.HospitalImplement;
-import com.bz.workshopfour.exceptions.PatientAlreadyExistException;
-import com.bz.workshopfour.exceptions.PatientNotFoundException;
 
 /*
  Program: Write a Java program to create a class called "Hospital" with instance variables "patients" 

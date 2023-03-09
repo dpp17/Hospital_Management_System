@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.bz.hospitalsystem.dao.AddPatient;
+import com.bz.hospitalsystem.dao.RemovePatientFromDB;
+import com.bz.hospitalsystem.exceptions.PatientAlreadyExistException;
+import com.bz.hospitalsystem.exceptions.PatientNotFoundException;
 import com.bz.hospitalsystem.interfaces.IHospital;
 import com.bz.hospitalsystem.model.HospitalPojo;
-import com.bz.workshopfour.dao.AddPatient;
-import com.bz.workshopfour.dao.RemovePatientFromDB;
-import com.bz.workshopfour.exceptions.PatientAlreadyExistException;
-import com.bz.workshopfour.exceptions.PatientNotFoundException;
 
 public class HospitalImplement implements IHospital{
 

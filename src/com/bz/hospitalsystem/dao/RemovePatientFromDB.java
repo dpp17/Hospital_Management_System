@@ -1,8 +1,8 @@
-package com.bz.workshopfour.dao;
+package com.bz.hospitalsystem.dao;
 
 import java.sql.*;
 import com.bz.hospitalsystem.connection.ConnectDB;
-import com.bz.workshopfour.exceptions.PatientNotFoundException;
+import com.bz.hospitalsystem.exceptions.PatientNotFoundException;
 
 public class RemovePatientFromDB {
 
